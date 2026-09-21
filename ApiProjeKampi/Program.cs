@@ -1,6 +1,8 @@
 using ApiProjeKampi.Entities;
 using ApiProjeKampi.WebApi.Context;
+using ApiProjeKampi.WebApi.ValidationRules;
 using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -9,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<ApiContext>();
 builder.Services.AddControllers();
+builder.Services.AddScoped<IValidator<Product>, ProductValidator>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
