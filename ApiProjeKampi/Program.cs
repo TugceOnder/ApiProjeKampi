@@ -1,12 +1,13 @@
 using ApiProjeKampi.Entities;
 using ApiProjeKampi.WebApi.Context;
 using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<ApiContext>();
-
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
