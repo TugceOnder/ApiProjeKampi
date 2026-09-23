@@ -1,4 +1,4 @@
-﻿namespace ApiProjeKampi.WEB.UI.Dtos.ProductDtos
+﻿namespace ApiProjeKampi.WebUI.Dtos.ProductDtos
 {
     public class CreateProductDto
     {

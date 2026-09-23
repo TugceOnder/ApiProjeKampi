@@ -1,4 +1,4 @@
-﻿using ApiProjeKampi.WEB.UI.Dtos.ServiceDtos;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -15,7 +15,7 @@ namespace ApiProjeKampi.WebUI.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7020/api/Services/");
+            var responseMessage = await client.GetAsync("https://localhost:7220/api/Services/");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();

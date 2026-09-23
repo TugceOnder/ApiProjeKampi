@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiProjeKampi.WEB.UI.ViewComponents
+namespace ApiProjeKampi.WEB.UI.ViewComponents.DefaultMenuViewComponents
 {
     public class _DefaultMenuViewComponentPartial : ViewComponent
     {

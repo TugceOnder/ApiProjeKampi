@@ -1,10 +1,10 @@
-﻿using ApiProjeKampi.WEB.UI.Dtos.CategoryDtos;
-
+﻿
+using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 
-namespace ApiProjeKampi.WebUI.ViewComponents.DefaultMenuViewComponents
+namespace ApiProjeKampi.WEB.UI.ViewComponents.DefaultMenuViewComponents
 {
     public class _DefaultMenuCategoryComponentPartial : ViewComponent
     {
@@ -16,7 +16,7 @@ namespace ApiProjeKampi.WebUI.ViewComponents.DefaultMenuViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7020/api/Categories/");
+            var responseMessage = await client.GetAsync("https://localhost:7220/api/Categories/");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();

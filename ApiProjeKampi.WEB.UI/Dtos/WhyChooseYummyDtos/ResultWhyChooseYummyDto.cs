@@ -1,6 +1,6 @@
-﻿namespace ApiProjeKampi.WebUI.Dtos.ServiceDtos
+﻿namespace ApiProjeKampi.WebUI.Dtos.WhyChooseYummyDtos
 {
-    public class ResultServiceDto
+    public class ResultWhyChooseYummyDto
     {
         public int ServiceId { get; set; }
         public string Title { get; set; }
