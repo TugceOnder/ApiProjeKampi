@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Dtos\AboutDtos\" />
     <Folder Include="Dtos\NotificationDtos\" />
   </ItemGroup>
 

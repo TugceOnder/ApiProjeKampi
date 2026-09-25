@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 
@@ -15,13 +16,13 @@
             @await Component.InvokeAsync("_NavbarAdminLayoutComponentPartial")
 
             @await Component.InvokeAsync("_SidebarAdminLayoutComponentPartial")
-
-
+        
+               
             <!-- Main Content -->
             <div class="main-content">
-                @RenderBody()
+            @RenderBody()
                 @await Component.InvokeAsync("_RightSettingsAdminLayoutComponentPartial")
-
+               
             </div>
             <footer class="main-footer">
                 <div class="footer-left">

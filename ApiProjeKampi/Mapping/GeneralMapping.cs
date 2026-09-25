@@ -2,6 +2,7 @@
 using ApiProjeKampi.Dtos.MessageDtos;
 using ApiProjeKampi.Dtos.ProductsDtos;
 using ApiProjeKampi.Entities;
+using ApiProjeKampi.WebApi.Dtos.AboutDtos;
 using ApiProjeKampi.WebApi.Dtos.NotificationDtos;
 using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
 using AutoMapper;
@@ -33,7 +34,12 @@ namespace ApiProjeKampi.WebApi.Mapping
             CreateMap<Category, CreateCategoryDto>().ReverseMap();
             CreateMap<Category, UpdateCategoryDto>().ReverseMap();
 
-           
+            CreateMap<About, ResultAboutDto>().ReverseMap();
+            CreateMap<About, CreateAboutDto>().ReverseMap();
+            CreateMap<About, GetAboutByIdDto>().ReverseMap();
+            CreateMap<About, UpdateAboutDto>().ReverseMap();
+
+
         }
     }
 }
