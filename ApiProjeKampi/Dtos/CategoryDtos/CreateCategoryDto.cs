@@ -1,4 +1,4 @@
-﻿namespace ApiProjeKampi.WebUI.Dtos.CategoryDtos
+﻿namespace ApiProjeKampi.WebApi.Dtos.CategoryDtos
 {
     public class CreateCategoryDto
     {
