@@ -1,6 +1,6 @@
 ﻿using ApiProjeKampi.Entities;
 using ApiProjeKampi.WebApi.Context;
-using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
+using ApiProjeKampi.WebApi.Dtos.CategoryDtos;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

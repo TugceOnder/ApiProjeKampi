@@ -1,7 +1,7 @@
 using ApiProjeKampi.Entities;
 using ApiProjeKampi.WebApi.Context;
+using ApiProjeKampi.WebApi.Dtos.CategoryDtos;
 using ApiProjeKampi.WebApi.ValidationRules;
-using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;

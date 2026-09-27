@@ -1,6 +1,7 @@
-﻿using ApiProjeKampi.Dtos.FeatureDtos;
+﻿
 using ApiProjeKampi.Entities;
 using ApiProjeKampi.WebApi.Context;
+using ApiProjeKampi.WebApi.Dtos.FeatureDtos;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
